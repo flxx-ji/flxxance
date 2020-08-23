@@ -15,7 +15,7 @@
 
   .cv
   {
-    width:900px ;
+     width:100% ;
      background: white;
      margin: 25px auto;
      display: flex;
@@ -173,9 +173,7 @@
     font-size: 20px;
     color: #424242;
     border-bottom: 3px solid  #FFD600;
-    
-      
-     
+    padding-bottom: 15px;   
 }_
 
 .right
@@ -197,7 +195,7 @@
   position: relative;
   text-align: center;
   margin-bottom: 15px;
-  width:300px;
+  width:95%;
   display: flex;
   flex-wrap: nowrap;
   border-bottom:3px solid #FFD600;
@@ -205,7 +203,7 @@
 
 .right_inner
 {
-  padding-left: 15px;
+  padding-left: 60px;
 }
 
 .titre_2 .icon2
@@ -217,20 +215,72 @@
  {
    display: flex;
    margin-bottom: 15px;
+   padding-left: 60px;
+    
  }
 
 .right_inner .li_wrap .date
 {
   width: 125px;
   color: #424242;
+   
 }
 
 .right_inner .li_wrap .info
 {
     width: calc(100% - 125px);
-    padding-left: 25px;
+    padding-left: 70px;
     position: relative;
 }
+
+
+ .right_inner .li_wrap .info_titre
+ {
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+ }
+
+ .right_inner .li_wrap .info_com
+ {
+   font-weight: 300;
+   font-size: 14px;
+   margin-top: 3px;
+ }
+ 
+.right_inner .li_wrap .info_cont
+{
+  margin-top: 15px
+}
+ 
+ .right_inner .li_wrap .date:before
+ {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left:0px;
+    width: 10px;
+    height: 10px;
+    background: #FFD600;
+    border-radius: 50%;
+ }
+
+ .li_wrap_r 
+ {
+   display: flex;
+   padding-right:850px;
+   justify-content: space-between;
+   font-size: 18px;
+ }
+
+ .li_wrap_r .info_titre
+ {
+  font-weight: 700;
+ }
+
+
+
+
 
 
  
