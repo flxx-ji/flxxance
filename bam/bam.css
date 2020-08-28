@@ -10,40 +10,47 @@
 
   body
   {
-      background: black;
+      background:white;
   }
 
   .cv
   {
-     width:100% ;
+      
+     width:100%;
      background: white;
      margin: 25px auto;
      display: flex;
   }
+ 
+     /*LEFT*/
+
+
+
 
   .left
   {
     background:#FFD600;
-    width: 300px;
-     
-
+    width: 400px;
+    height:1490px; 
   }
 
-  .right
-  {
-    width: calc(100% - 250px);
-  }
+   
 
   .left .img_guts
   {
+     
     text-align: center;
     padding: 20px 0;
+    padding-left:15px ;
   }
 
   .left .img_guts img
   {
+    padding-top: 20px;
+    padding-bottom:20px ;
+
     width: 150px;
-    border-radius: 500pX;
+    border-radius: 50%;
   }
 
   .pb
@@ -65,22 +72,13 @@
      margin-bottom: 15px;
      border:3px #424242;
      background:#424242;
-     width:300px;
+     width:400px;
+
       
   }
 
    
-
-  .titre::before
-  {
-    content: "";
-    position: absolute;
-    top: 35px;
-    right: 0;
-    width: 50px;
-    height:3px;
-     
-  }
+ 
   
   
   .contact .li_wrap
@@ -100,6 +98,14 @@
     color: #424242;
   }
 
+  .je
+  {
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    height: 400px;
+  }
 
   .loisirs ul
   {
@@ -133,13 +139,27 @@
 }
 
 
-.header
+
+/* RIGHT */
+
+
+
+.right
 {
-  background: #fff;
-    padding: 15px 30px;
+  width: calc(100% - 250px);
+  padding-top: 100px;
+}
+
+.header
+{   
+    
+    padding-left:60px;
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom:20px;
     color: #fff;
     height: 240px;
-    
+    width: 95%;  
 }
 
 .name_role
@@ -164,6 +184,7 @@
   color:#424242;
   justify-content: right;
   align-items:right ;
+  padding-left: 5px;
 }
  
 
@@ -178,8 +199,8 @@
 
 .right
 {
-  padding: 30px;
-  width: 800px;
+  
+  width:  100%;
 }
 
 .titre_2
@@ -199,11 +220,24 @@
   display: flex;
   flex-wrap: nowrap;
   border-bottom:3px solid #FFD600;
+  
 } 
+
+.form_wrap
+{
+    
+}
+
+
+
 
 .right_inner
 {
   padding-left: 60px;
+  letter-spacing:2px;
+  word-spacing: 2px;
+  width: 100%;
+   
 }
 
 .titre_2 .icon2
@@ -252,19 +286,7 @@
 {
   margin-top: 15px
 }
- 
- .right_inner .li_wrap .date:before
- {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left:0px;
-    width: 10px;
-    height: 10px;
-    background: #FFD600;
-    border-radius: 50%;
- }
-
+  
  .li_wrap_r 
  {
    display: flex;
@@ -278,9 +300,129 @@
   font-weight: 700;
  }
 
+ .info_r1
+ {
+   padding-left: 150px;
+ }
 
 
+ @media screen and (max-width:1393px)
+ {
+   .left
+   {
+    height:1490px; 
+   }
 
 
+   .loisir_barr_pb
+   {
+     padding-top: 100px;
+   }
 
+   .right
+   {
+     padding-top:50px;
+      
+   } 
+
+    
+    .form_wrap
+    { 
+      padding-top: 30px;
+    }
+    .exp
+    {
+      padding-top: 130px;
+    }
+   
+    .exp_wrap
+    {
+      padding-top: 30px;
+    }
+
+   .reco
+   {
+     padding-top: 150px;
+   }
+     
+  
+ }
+
+
+ @media screen and (max-width:1101px)
+ {
+    .left
+    {
+       height: 1500px;
+       
+    }
  
+    .exp
+    {
+      padding-top:  110px;
+    }
+    
+    .reco
+    {
+      padding-top: 50px;
+    }
+ }
+     
+  
+
+ @media screen and (max-width:997px)
+ {
+   .left
+   {
+     height: 1700px;
+   }
+    .contact
+    {
+      padding-top: 50px
+    }
+   .àprop
+   {
+     padding-top: 50px ;
+   }
+
+   .exp
+   {
+      padding-top:90px;
+   }
+
+   .reco
+   {
+     padding-top: 30px;
+   }
+ }
+ 
+ @media screen and (max-width:713px)
+ {
+   .left
+   {
+       height:1900px;
+   }
+     
+     .àprop
+     {
+       padding-top: 0px;
+     }
+
+   .loisir_barr_pb
+   {
+     padding-bottom: 100px;
+   }
+ }
+
+
+ @media screen and (max-width:425px)
+ {
+   .barr2fair
+   {
+     display: flex;
+     flex-direction: column-reverse;
+     align-items: center;
+
+   }
+ 
+}
