@@ -18,8 +18,9 @@
       
      width:100%;
      background: white;
-     margin: 25px auto;
+     margin: 0 auto;
      display: flex;
+
   }
  
      /*LEFT*/
@@ -31,26 +32,24 @@
   {
     background:#FFD600;
     width: 400px;
-    height:1490px; 
+     
   }
 
    
 
   .left .img_guts
   {
-     
+    height: 300px;
     text-align: center;
-    padding: 20px 0;
-    padding-left:15px ;
+     
   }
 
   .left .img_guts img
   {
-    padding-top: 20px;
-    padding-bottom:20px ;
-
+     height: 150px;
     width: 150px;
     border-radius: 50%;
+    margin-top: 75px;
   }
 
   .pb
@@ -83,35 +82,56 @@
   
   .contact .li_wrap
   {
+    
     flex-direction: column;
     display: flex;
-    align-items: center;
+    padding-left: 50px;
     width: 100%;
     margin-bottom: 15px;
+    color: #424242;
+     
   }
   
   .contact .li_wrap .texte
   { 
-    flex-direction: column;
     width: calc(100% -50px);
-    word-break: break-word;
     color: #424242;
   }
+  
+   a, a:hover, a:visited, a:active
+   {
+     color:#424242;
+     text-decoration: none;
+   }
 
+
+   
   .je
   {
-    
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
+
     height: 400px;
+    flex: 1 0 0; 
+    display: block;
+    color: #424242;
   }
+ 
+
+
+
+  .loisir_barr_pb
+  {
+    max-height: max-content;
+    flex: 1 0 0;
+
+  }
+
 
   .loisirs ul
   {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    color: #424242;
   }
 
 .loisirs .li_wrap  
@@ -124,6 +144,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+     
+
 }
 
 .loisirs .li_wrap
@@ -239,10 +261,15 @@
   width: 100%;
    
 }
-
-.titre_2 .icon2
+.icon_2
 {
-  color: #424242;
+  color: #FFD600;
+  letter-spacing: 10px;
+}
+
+.titre_2 
+{
+  color:#424242;
   letter-spacing: 10px;
 }
  .right_inner .li_wrap
@@ -305,6 +332,9 @@
    padding-left: 150px;
  }
 
+
+
+/*
 
  @media screen and (max-width:1393px)
  {
@@ -425,4 +455,5 @@
 
    }
  
-}
+}/*
+ 
