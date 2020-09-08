@@ -215,9 +215,15 @@
     font-weight: 300;
     font-size: 20px;
     color: #424242;
-    border-bottom: 3px solid  #FFD600;
-    padding-bottom: 15px;   
+    padding-bottom: 15px;
+
 }_
+
+.role p span
+{
+  border-bottom:3px solid #FFD600;
+  width: 200px;
+}
 
 .right
 {
