@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
-  *
+*
   {
     margin:0;
     padding: 0;
@@ -17,7 +17,7 @@
   {
       
      width:100%;
-     background: white;
+     background: rgb(255, 255, 255);
      margin: 0 auto;
      display:flex ;
 
@@ -32,6 +32,10 @@
   {
     background:#FFD600;
     width: 400px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
      
   }
 
@@ -71,14 +75,8 @@
      margin-bottom: 15px;
      border:3px #424242;
      background:#424242;
-     width:400px;
-
-      
   }
 
-   
-  
-  
   .contact .li_wrap
   {
     
@@ -93,24 +91,33 @@
   
   .contact .li_wrap .texte
   { 
-    width: calc(100% -50px);
+    width: calc(100% - 50px);
     color: #424242;
+    
+     
+  }
+
+  .contact .ul 
+  {
+    list-style: none;
   }
   
-   a, a:hover, a:visited, a:active
+   a, 
+   a:hover,
+    a:visited,
+     a:active
    {
      color:#424242;
      text-decoration: none;
+     
    }
 
-
+  .aprop{
+    flex: 1 0 0;
+  }
    
   .je
   {
-
-    height: 400px;
-    flex: 1 0 0; 
-    display: block;
     color: #424242;
   }
  
@@ -120,8 +127,6 @@
   .loisir_barr_pb
   {
     max-height: max-content;
-    flex: 1 0 0;
-
   }
 
 
@@ -131,6 +136,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     color: #424242;
+    list-style: none;
   }
 
 .loisirs .li_wrap  
@@ -157,6 +163,7 @@
 .loisirs .li_wrap .texte
 {
   color: #424242;
+
 }
 
 
@@ -173,14 +180,13 @@
 
 .header
 {   
-    
     padding-left:60px;
     background: #fff;
     padding-top: 20px;
     padding-bottom:20px;
     color: #fff;
     height: 240px;
-    width: 95%;  
+    position: relative;  
 }
 
 .name_role
@@ -204,7 +210,6 @@
   font-weight: 700;
   color:#424242;
   justify-content: right;
-  align-items:right ;
   padding-left: 5px;
 }
  
@@ -218,7 +223,7 @@
      
 }
 
-span.Dév
+span.Dev
 
  {
    border-bottom: 3px solid #FFD600;
@@ -229,7 +234,6 @@ span.Dév
 
 .right
 {
-
   width:  100%;
 }
 
@@ -268,26 +272,44 @@ span.Dév
 }
 .icon2
 {
-  color: #FFD600;
+  color:#FFD600;
   letter-spacing: 10px;
 }
 
 .titre_2 
 {
   color:#424242;
-  letter-spacing: 10px;
 }
  .right_inner .li_wrap
  {
+   justify-content: space-between;
    display: flex;
    margin-bottom: 15px;
-   padding-left: 60px;
+   max-width: 1200px;
     
+ } 
+
+ .li_wrap .icon3
+ {
+   color: #FFD600;
+   padding-right: 10px;
+ }
+ .li_wrap .icon3_1{
+   color: #FFD600;
+   padding-right: 10px;
+
+ }
+ .li_wrap .icon3_2
+ {
+   font-size: 7px;
+   padding-top: 5px;
+   color: #FFD600;
+   padding-right: 10px;
  }
 
 .right_inner .li_wrap .date
 {
-  width: 125px;
+  width: max-content;
   color: #424242;
    
 }
@@ -337,83 +359,79 @@ span.Dév
    padding-left: 150px;
  }
 
-@media screen and (max-width:1024px)
-{
-   .form_wrap
-   {
-     padding-top: 10px;
-   }
-   .exp
-   {
-     padding-top: 45px;
-   }
-   .exp_wrap
-   {
-     padding-top: 10px;
-   }
-   .reco
-   {
-     padding-top: 55px;
-   }
+
+ @media screen and (max-width: 970px) {
+  .titre {
+    font-size: 17px;
+  }
+  .titre_2 {
+    font-size: 17px;
+  }
+  .left {
+    width: 300px;
+  }
+  .right_inner {
+    padding-left: 25px;
+  }
 }
 
-@media screen and (max-width: 810px)
- {
-   .contact_barr_pb
-   {
-     margin-top: 30px;
-   }
-   .àprop
-   {
-    margin-top: 28px;
-   }
-   .loisir_barr_pb
-   {
-     margin-top: 90px;
-   }
-    .left
-    {
-      font-size: 24px;
-      
-    }
-    .titre
-    {
-      font-size: 26px;
-    }
- }  
+@media screen and (max-width: 670px) {
+  .cv {
+    flex-direction: column-reverse;
+  }
+  .left {
+    width: initial;
+    margin-top: 20px;
+    min-height: auto;
+  }
+  .left .img_guts {
+    display: none;
+  }
+  .je {
+    padding: 5px;
+  }
+  .contact .li_wrap {
+    padding-left: 0;
+    text-align: center;
+  }
+  .right_inner .li_wrap {
+    flex-direction: column;
+  }
+  .right_inner .li_wrap .info {
+    width: auto;
+  }
+  .mobilePP {
+    display: block;
+    position: absolute;
+    top: -80px;
+  }
+  .mobilePP img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  .header {
+    height: 150px;
+  }
+}
 
- @media and screen(max-width:740px)
- {
-   .contact_barr_pb
-   {
-     margin-top:43px;
-   }
-
-   .àprop
-   {
-     margin-top: 51px;
-
-   }
-   .loisir_barr_pb
-   {
-     margin-top: 154px;
-   }
-
-   /*right*/
-   .form_wrap
-   {
-     margin-top: 60px;
-   }
-   .exp
-   {
-     padding-top: 66px;
-   }
-   .exp_wrap
-   {
-     margin-top: 60px;
-   }
-   .li_wrap
-   {
-     margin-top: 60px;
-   }
- }
+@media screen and (max-width: 380px) {
+  .li_wrap_r {
+    flex-direction: column;
+  }
+  .info_r {
+    margin-bottom: 20px;
+  }
+  .header {
+    padding-left: 0;
+  }
+  .name_role,
+  .role {
+    width: max-content;
+    margin: 0 auto;
+  }
+  .mobilePP {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
