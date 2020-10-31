@@ -73,8 +73,8 @@
      position: relative;
      text-align: center;
      margin-bottom: 15px;
-     border:3px #424242;
-     background:#424242;
+     border:3px ;
+     background-color:#424242;
   }
 
   .contact .li_wrap
@@ -181,10 +181,10 @@
 .header
 {   
     padding-left:60px;
-    background: #fff;
+    background-color: #fff;
     padding-top: 20px;
     padding-bottom:20px;
-    color: #fff;
+     
     height: 240px;
     position: relative;  
 }
@@ -257,9 +257,7 @@ span.Dev
   
 } 
 
-
-
-
+ 
 
 
 .right_inner
